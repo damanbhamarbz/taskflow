@@ -1,0 +1,1 @@
+import {Router} from 'express';import auth from '../middleware/auth.middleware.js';import {createTodo,getTodos,updateTodo,deleteTodo} from '../controllers/todo.controller.js';const r=Router();r.use(auth);r.get('/',getTodos);r.post('/',createTodo);r.put('/:id',updateTodo);r.delete('/:id',deleteTodo);export default r;
