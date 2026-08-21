@@ -1,0 +1,7 @@
+node_modules/
+server/taskflow.db
+server/taskflow.db-shm
+server/taskflow.db-wal
+.env
+.DS_Store
+dist/
